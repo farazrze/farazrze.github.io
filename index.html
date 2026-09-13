@@ -1,6 +1,3 @@
-{% load static %}
-
-
 <!doctype html>
 <html lang="en" class="no-js">
 <head>
@@ -9,7 +6,7 @@
   <meta name="description" content="Faramarz Rezaee — Software Engineer, Back-end Developer and WordPress Developer.">
   <meta name="author" content="Faramarz Rezaee">
   <title>Faramarz Rezaee — CV</title>
-  <link rel="stylesheet" href="{% static 'css/cv.css' %}">
+  <link rel="stylesheet" href="cv.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -23,7 +20,7 @@
 
   <header class="site-header" id="header">
     <div class="container topbar">
-      <a class="logo" href="{% url 'website:index' %}" aria-label="Faraz home">Faraz<span>Webmaster</span></a>
+      <a class="logo" href="#" aria-label="Faraz home">Faraz<span>Webmaster</span></a>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav"><span></span><span></span><span></span><b>Menu</b></button>
       <nav id="main-nav" aria-label="Main navigation">
         <a class="nav-link active" href="#intro">Home</a>
@@ -267,7 +264,7 @@
       </div>
     </section>
 
-    ```html
+
 <section id="portfolio" class="section portfolio">
 
   <div class="container">
@@ -292,11 +289,11 @@
 
     <div class="portfolio-grid">
 
-      {% for port in ports|dictsortreversed:"id"|slice:":4" %}
+      
 
       <a
         class="project project-one reveal"
-        href="{% url 'portfolio:single_portfolio' pid=port.id %}"
+        href="#"
         target="_blank"
         rel="noopener"
       >
@@ -304,27 +301,27 @@
         <div class="project-art">
 
           <img
-            src="{{ port.image.url }}"
-            alt="{{ port.title }}"
+            src="#"
+            <!-- alt="{{ port.title }}" -->
           >
 
           
 
           <b>
-            {{ port.title }}
+            <!-- {{ port.title }} -->
           </b>
 
         </div>
 
 
         <div class="project-info">
-          {% for cat in port.category.all %}
+        
           <span>
-            {{cat.name}}
+           
           </span>
-          {% endfor %}
+      
           <h3>
-            {{ port.introduce }}
+          
           </h3>
 
           <i>
@@ -335,7 +332,6 @@
 
       </a>
 
-      {% endfor %}
 
     </div>
 
@@ -357,7 +353,7 @@
 
       <a
         class="button button-dark"
-        href="{% url 'portfolio:home_portfolio' %}"
+        href="#"
         target="_blank"
         rel="noopener"
       >
@@ -419,6 +415,6 @@
     <div class="container footer-inner"><a class="logo" href="#top">Faraz<span>Webmaster</span></a><p>Designed & developed by <a href="https://farazwebmaster.ir/" target="_blank" rel="noopener">FarazWebMaster</a></p><div class="footer-socials"><a href="https://www.instagram.com/faraz_webmaster" target="_blank" rel="noopener">Instagram</a><a href="https://t.me/farazwebmaster" target="_blank" rel="noopener">Telegram</a></div></div>
   </footer>
   <a href="#top" id="goTop" class="go-top" aria-label="Back to top">↑</a>
-  <script type="module" src="{% static 'js/cv.js' %}" defer></script>
+  <script type="module" src="cv.js" defer></script>
 </body>
 </html>
