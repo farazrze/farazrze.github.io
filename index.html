@@ -1,56 +1,28 @@
-
+```html
 <!doctype html>
 <html lang="en" class="no-js">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <meta
-    name="description"
-    content="Faramarz Rezaee — Software Engineer, Back-end Developer and WordPress Developer."
-  >
-
+  <meta name="description" content="Faramarz Rezaee — Software Engineer, Back-end Developer and WordPress Developer.">
   <meta name="author" content="Faramarz Rezaee">
-
   <title>Faramarz Rezaee — CV</title>
-
   <link rel="stylesheet" href="cv.css">
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <link
-    href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500&family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
-    rel="stylesheet"
-  >
+    <link
+        href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500&family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
 </head>
-
 <body id="top">
+  <div id="preloader" aria-hidden="true"><span></span></div>
 
-  <div id="preloader" aria-hidden="true">
-    <span></span>
-  </div>
-
-  <!-- HEADER -->
   <header class="site-header" id="header">
     <div class="container topbar">
-
-      <a class="logo" href="#top" aria-label="Faraz home">
-        Faraz<span>Webmaster</span>
-      </a>
-
-      <button
-        class="menu-toggle"
-        type="button"
-        aria-expanded="false"
-        aria-controls="main-nav"
-      >
-        <span></span>
-        <span></span>
-        <span></span>
-        <b>Menu</b>
-      </button>
-
+      <a class="logo" href="#" aria-label="Faraz home">Faraz<span>Webmaster</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav"><span></span><span></span><span></span><b>Menu</b></button>
       <nav id="main-nav" aria-label="Main navigation">
         <a class="nav-link active" href="#intro">Home</a>
         <a class="nav-link" href="#about">About</a>
@@ -59,1048 +31,394 @@
         <a class="nav-link" href="#services">Services</a>
         <a class="nav-link" href="#contact">Contact</a>
       </nav>
-
     </div>
   </header>
 
-
   <main>
 
-    <!-- HERO -->
-    <section class="hero" id="intro">
 
-      <canvas aria-hidden="true"></canvas>
+    <!--
+    hero
+    -->
+<section class="hero">
 
-      <div class="hero-grid" aria-hidden="true"></div>
+    <!-- Background -->
+    <canvas aria-hidden="true"></canvas>
 
-      <div class="hero-glow hero-glow-one" aria-hidden="true"></div>
-      <div class="hero-glow hero-glow-two" aria-hidden="true"></div>
+    <div class="hero-grid" aria-hidden="true"></div>
 
-      <header class="nav"></header>
+    <div class="hero-glow hero-glow-one" aria-hidden="true"></div>
 
-      <div class="center-col">
+    <div class="hero-glow hero-glow-two" aria-hidden="true"></div>
+
+
+    <!-- Navigation -->
+    <header class="nav">
+    </header>
+
+
+    <!-- Main Content -->
+    <div class="center-col">
 
         <p class="badge" id="badge"></p>
 
         <div class="eyebrow">
-          Hello, World.
+            Hello, World.
         </div>
 
         <h1 class="heading" id="heading">
-          I'm <span>Faramarz Rezaee.</span>
+            I'm <span>Faramarz Rezaee.</span>
         </h1>
 
         <p class="subline" id="subline">
-          <span>Back-end Developer</span>
-          <i></i>
-          <span>WordPress Designer</span>
+            <span>Back-end Developer</span>
+            <i></i>
+            <span>WordPress Designer</span>
         </p>
 
         <p class="hero-copy">
-          Software engineer with a background in international business,
-          focused on Python, Django, WordPress and modern web solutions.
+            Software engineer with a background in international business,
+            focused on Python, Django, WordPress and modern web solutions.
         </p>
 
         <div class="hero-actions">
 
-          <a class="button button-primary" href="#about">
-            More About Me
-            <span>↓</span>
-          </a>
+            <a
+                class="button button-primary"
+                href="#about"
+            >
+                More About Me
+                <span>↓</span>
+            </a>
 
-          <a class="button button-ghost" href="#contact">
-            Let's Talk
-            <span>↗</span>
-          </a>
+            <a
+                class="button button-ghost"
+                href="#contact"
+            >
+                Let's Talk
+                <span>↗</span>
+            </a>
 
         </div>
 
 
-        <!-- SOCIAL LINKS -->
-        <div class="form-wrap" id="form-wrap">
+        <!-- Socials -->
+       <!-- Socials -->
+        <div
+            class="form-wrap"
+            id="form-wrap"
+        >
 
-          <div class="hero-socials" aria-label="Social links">
-
-            <!-- LinkedIn -->
-            <a
-              href="https://www.linkedin.com/in/faraz-rze/"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="LinkedIn"
+            <div
+                class="hero-socials"
+                aria-label="Social links"
             >
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.13 1.44-2.13 2.94v5.67H9.35V8.99h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.26 2.37 4.26 5.45v6.3ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM3.56 20.45h3.57V8.99H3.56v11.46ZM22.22 0H1.77C.79 0 .01.78.01 1.75v20.5c0 .97.78 1.75 1.76 1.75h20.45c.97 0 1.77-.78 1.77-1.75V1.75C23.99.78 23.19 0 22.22 0Z"/>
-              </svg>
-            </a>
 
-            <!-- GitHub -->
-            <a
-              href="https://github.com/farazrze"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="GitHub"
-            >
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56v-2.17c-3.2.7-3.87-1.36-3.87-1.36-.53-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.75 2.68 1.25 3.34.96.1-.74.4-1.25.73-1.54-2.55-.29-5.23-1.28-5.23-5.69 0-1.26.45-2.29 1.18-3.1-.12-.29-.51-1.47.11-3.06 0 0 .96-.31 3.15 1.18a10.9 10.9 0 0 1 5.74 0c2.19-1.49 3.15-1.18 3.15-1.18.62 1.59.23 2.77.11 3.06.73.81 1.18 1.84 1.18 3.1 0 4.42-2.69 5.39-5.25 5.67.41.35.78 1.04.78 2.1v3.11c0 .31.21.67.8.56A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/>
-              </svg>
-            </a>
+                <!-- LinkedIn -->
+                <a
+                    href="https://www.linkedin.com/in/faraz-rze/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="LinkedIn"
+                >
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.13 1.44-2.13 2.94v5.67H9.35V8.99h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.26 2.37 4.26 5.45v6.3ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM3.56 20.45h3.57V8.99H3.56v11.46ZM22.22 0H1.77C.79 0 .01.78.01 1.75v20.5c0 .97.78 1.75 1.76 1.75h20.45c.97 0 1.77-.78 1.77-1.75V1.75C23.99.78 23.19 0 22.22 0Z"/>
+                    </svg>
+                </a>
 
-            <!-- WhatsApp -->
-            <a
-              href="https://wa.me/989128189597"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="WhatsApp"
-            >
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M12.04 2a9.92 9.92 0 0 0-8.53 15.04L2 22l5.11-1.34A9.94 9.94 0 1 0 12.04 2Zm0 18.18c-1.55 0-3.07-.42-4.4-1.22l-.32-.19-3.03.8.81-2.95-.21-.33A8.2 8.2 0 1 1 12.04 20.18Zm4.5-6.15c-.25-.13-1.48-.73-1.71-.81-.23-.09-.4-.13-.57.13-.17.25-.65.81-.8.98-.15.17-.3.19-.55.06-.25-.13-1.04-.38-1.98-1.22-.73-.65-1.22-1.45-1.36-1.69-.14-.25-.02-.38.11-.5.12-.12.25-.3.38-.45.13-.15.17-.25.25-.42.08-.17.04-.32-.02-.45-.06-.13-.57-1.37-.78-1.88-.2-.49-.41-.42-.57-.43h-.49c-.17 0-.45.06-.69.32-.23.25-.9.88-.9 2.15s.92 2.49 1.05 2.66c.13.17 1.81 2.77 4.38 3.88.61.26 1.09.42 1.46.54.61.19 1.16.16 1.6.1.49-.07 1.48-.6 1.69-1.18.21-.58.21-1.08.15-1.18-.06-.1-.23-.16-.48-.29Z"/>
-              </svg>
-            </a>
+                <!-- GitHub -->
+                <a
+                    href="https://github.com/farazrze"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="GitHub"
+                >
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56v-2.17c-3.2.7-3.87-1.36-3.87-1.36-.53-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.75 2.68 1.25 3.34.96.1-.74.4-1.25.73-1.54-2.55-.29-5.23-1.28-5.23-5.69 0-1.26.45-2.29 1.18-3.1-.12-.29-.51-1.47.11-3.06 0 0 .96-.31 3.15 1.18a10.9 10.9 0 0 1 5.74 0c2.19-1.49 3.15-1.18 3.15-1.18.62 1.59.23 2.77.11 3.06.73.81 1.18 1.84 1.18 3.1 0 4.42-2.69 5.39-5.25 5.67.41.35.78 1.04.78 2.1v3.11c0 .31.21.67.8.56A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/>
+                    </svg>
+                </a>
 
-            <!-- Telegram -->
-            <a
-              href="https://t.me/farazwebmaster"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Telegram"
-            >
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M21.8 3.2 18.5 20c-.25 1.18-.91 1.47-1.85.92l-5.1-3.76-2.46 2.37c-.27.27-.5.5-1.02.5l.37-5.2 9.47-8.55c.41-.37-.09-.57-.64-.2L5.56 13.1.51 11.52c-1.1-.34-1.12-1.1.23-1.61L20.48 2.3c.91-.34 1.71.2 1.32.9Z"/>
-              </svg>
-            </a>
+                <!-- WhatsApp -->
+                <a
+                    href="https://wa.me/989128189597"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="WhatsApp"
+                >
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M12.04 2a9.92 9.92 0 0 0-8.53 15.04L2 22l5.11-1.34A9.94 9.94 0 1 0 12.04 2Zm0 18.18c-1.55 0-3.07-.42-4.4-1.22l-.32-.19-3.03.8.81-2.95-.21-.33A8.2 8.2 0 1 1 12.04 20.18Zm4.5-6.15c-.25-.13-1.48-.73-1.71-.81-.23-.09-.4-.13-.57.13-.17.25-.65.81-.8.98-.15.17-.3.19-.55.06-.25-.13-1.04-.38-1.98-1.22-.73-.65-1.22-1.45-1.36-1.69-.14-.25-.02-.38.11-.5.12-.12.25-.3.38-.45.13-.15.17-.25.25-.42.08-.17.04-.32-.02-.45-.06-.13-.57-1.37-.78-1.88-.2-.49-.41-.42-.57-.43h-.49c-.17 0-.45.06-.69.32-.23.25-.9.88-.9 2.15s.92 2.49 1.05 2.66c.13.17 1.81 2.77 4.38 3.88.61.26 1.09.42 1.46.54.61.19 1.16.16 1.6.1.49-.07 1.48-.6 1.69-1.18.21-.58.21-1.08.15-1.18-.06-.1-.23-.16-.48-.29Z"/>
+                    </svg>
+                </a>
 
+                <!-- Telegram -->
+                <a
+                    href="https://t.me/farazwebmaster"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Telegram"
+                >
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M21.8 3.2 18.5 20c-.25 1.18-.91 1.47-1.85.92l-5.1-3.76-2.46 2.37c-.27.27-.5.5-1.02.5l.37-5.2 9.47-8.55c.41-.37-.09-.57-.64-.2L5.56 13.1.51 11.52c-1.1-.34-1.12-1.1.23-1.61L20.48 2.3c.91-.34 1.71.2 1.32.9Z"/>
+                    </svg>
+                </a>
+
+            </div>
+
+            <!-- Kept for existing JS -->
+            <form id="waitlist-form"></form>
+
+        </div>
+
+
+            <!-- Kept for existing JS -->
+            <form id="waitlist-form"></form>
+
+        </div>
+
+    </div>
+
+
+    <!-- Scroll -->
+    <a
+        class="scroll-hint"
+        href="#about"
+        aria-label="Scroll to about"
+    >
+        <span></span>
+        Scroll
+    </a>
+    
+
+</section>
+
+    <section id="about" class="section about">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div class="eyebrow">About</div>
+          <h2>Let me introduce <em>myself.</em></h2>
+          <p>Commerce, technology and a decade of real-world experience — brought together in one profile.</p>
+        </div>
+        <div class="about-grid">
+          <div class="profile-card reveal">
+            <div class="profile-avatar" aria-label="Faramarz Rezaee profile photo">
+              <img src="https://avatars.githubusercontent.com/u/141013131?v=4" alt="Faramarz Rezaee">
+            </div>
+            <div class="profile-card-body">
+              <span class="tag">Software Engineer</span>
+              <h3>Faramarz Rezaee</h3>
+              <p>Faraz Rze</p>
+              <a href="https://farazwebmaster.ir/" target="_blank" rel="noopener">farazwebmaster.ir ↗</a>
+            </div>
           </div>
+</div>
+          <div class="about-copy reveal">
+            <p class="lead">My name is Faramarz Rezaee, and I am a professional with a diverse background in commerce and technology. With over 5 years of work experience, I have developed a strong skill set that combines business expertise with programming and web development.</p>
+            <p>I am a professional WordPress developer with strong experience in designing and developing modern websites. I also specialize in Python and Django, with hands-on experience in building web applications and backend solutions</p>
+            <p>Alongside development, I have practical knowledge of HTML and CSS and a strong professional interest in Artificial Intelligence, AI-assisted development, automation, and advanced prompt engineering. I focus on combining software development with AI tools to create efficient, modern, and practical digital solutions.</p>
+            <div class="facts">
+              <div><small>Full name</small><strong>Faramarz Rezaee</strong></div>
+              <div><small>Nickname</small><strong>Faraz_Rze</strong></div>
+              <div><small>Birth date</small><strong>February 17, 1995</strong></div>
+              <div><small>Role</small><strong>Freelancer / Developer</strong></div>
+              <div><small>Email</small> <a href="mailto:farazrze18@gmail.com"><strong>farazrze18@gmail.com</strong></a></div>
+              <div><small>Website</small><a href="https://farazwebmaster.ir" target="_blank" rel="noopener"></a><strong>farazwebmaster.ir</strong></div>
+              <div><small>GitHub</small> <a href="https://github.com/farazrze"><strong>FarazRze</strong></a></div>
+              <div><small>Linkdin</small> <a href="https://linkedin.com/in/faraz-rze"><strong>Faraz-Rze</strong></a></div>
+            
+            </div>
+          </div>
+        </div>
+
+        <div class="skills-area reveal">
+          <div class="skills-title"><div><span class="eyebrow">Toolkit</span><h3>Technical skills</h3></div><p>Selected skills from the original CV, presented with a cleaner visual system.</p></div>
+          <div class="skill-grid">
+            <div class="skill"><div><span>WordPress</span><b>100%</b></div><div class="skill-track"><i style="--value:100%"></i></div></div>
+            <div class="skill"><div><span>Python</span><b>85%</b></div><div class="skill-track"><i style="--value:85%"></i></div></div>
+            <div class="skill"><div><span>C++</span><b>30%</b></div><div class="skill-track"><i style="--value:30%"></i></div></div>
+            <div class="skill"><div><span>HTML</span><b>60%</b></div><div class="skill-track"><i style="--value:60%"></i></div></div>
+            <div class="skill"><div><span>CSS</span><b>60%</b></div><div class="skill-track"><i style="--value:60%"></i></div></div>
+            <div class="skill"><div><span>Django</span><b>80%</b></div><div class="skill-track"><i style="--value:80%"></i></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="resume" class="section section-soft">
+      <div class="container">
+        <div class="section-heading reveal"><div class="eyebrow">Resume</div><h2>More of my <em>credentials.</em></h2><p>Education, training and professional experience.</p></div>
+        <div class="timeline-layout">
+          <div class="timeline-column reveal">
+            <h3 class="timeline-title">Education & Training</h3>
+            <article class="timeline-item"><span class="timeline-dot"></span><time>2023 — Present</time><h4>Bachelor: Software Engineering</h4><h5>Tehran North University</h5><p>Studying Computer Science with a major in Software Engineering, with a future goal of studying Artificial Intelligence at master's level.</p></article>
+            <article class="timeline-item"><span class="timeline-dot"></span><time>2013 — 2017</time><h4>Bachelor: Natural Resources Engineering — Environmental</h4><h5>Tehran North University</h5><p>Four-year university program in natural resources engineering and environmental studies.</p></article>
+            <article class="timeline-item"><span class="timeline-dot"></span><time>2023 — 2024</time><h4>Django</h4><h5>Maktabkhooneh</h5><p>Focused training in the Django framework and web application development.</p></article>
+            <article class="timeline-item"><span class="timeline-dot"></span><time>2023 — 2024</time><h4>WordPress</h4><h5>Maktabkhooneh</h5><p>Learned WordPress to deliver polished websites efficiently alongside software engineering work.</p></article>
+            <article class="timeline-item"><span class="timeline-dot"></span><time>2023</time><h4>Python Advanced MasterClass</h4><h5>Cando</h5><p>Advanced Python concepts and practical development.</p></article>
+            <article class="timeline-item"><span class="timeline-dot"></span><time>2022 — 2023</time><h4>Python Foundation MasterClass</h4><h5>Cando</h5><p>Python foundations and practical programming; progressed to become the first student in the class.</p></article>
+            <article class="timeline-item"><span class="timeline-dot"></span><time>2022</time><h4>Programming Fundamentals</h4><h5>Cando</h5><p>Started structured programming education and built the foundation for later Python and web development work.</p></article>
+          </div>
+          <div class="timeline-column reveal">
+            <h3 class="timeline-title">Work Experience</h3>
+            <article class="timeline-item"><span class="timeline-dot"></span><time>2020 — Present</time><h4>Software Engineer</h4><h5>Fanavaran Arvand</h5><p>Transitioned into software engineering and also took responsibility for the company's website design and development.</p></article>
+            <article class="timeline-item"><span class="timeline-dot"></span><time>2020 — Present</time><h4>Web Designer / WordPress Developer</h4><h5>Freelancer</h5><p>Remote freelance website design and development alongside software engineering.</p></article>
+            <article class="timeline-item"><span class="timeline-dot"></span><time>2018 — 2020</time><h4>Business Analyst</h4><h5>Fanavaran Arvand</h5><p>Started at the company as a Sales Specialist and developed experience in commercial operations and client-facing work.</p></article>
+            <article class="timeline-item"><span class="timeline-dot"></span><time>2015 — 2018</time><h4>Business Analyst</h4><h5>Palayesh Parafin Khavaran</h5><p>Worked as an International Business Analyst in a company involved in oil products, including import, export and production.</p></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+<section id="portfolio" class="section portfolio">
+
+  <div class="container">
+
+    <div class="section-heading reveal">
+
+      <div class="eyebrow">
+        Portfolio
+      </div>
+
+      <h2>
+        Check out some of my <em>works.</em>
+      </h2>
+
+      <p>
+        Selected projects from the original CV.
+        Click a project to open its portfolio page.
+      </p>
+
+    </div>
+
+
+    <div class="portfolio-grid">
+
+      
+
+      <a
+        class="project project-one reveal"
+        href="#"
+        target="_blank"
+        rel="noopener"
+      >
+
+        <div class="project-art">
+
+          <img
+            src="#"
+            <!-- alt="{{ port.title }}" -->
+          >
+
+          
+
+          <b>
+            <!-- {{ port.title }} -->
+          </b>
 
         </div>
+
+
+        <div class="project-info">
+        
+          <span>
+           
+          </span>
+      
+          <h3>
+          
+          </h3>
+
+          <i>
+            ↗
+          </i>
+
+        </div>
+
+      </a>
+
+
+    </div>
+
+
+    <div class="portfolio-cta reveal">
+
+      <div>
+
+        <span class="eyebrow">
+          More projects
+        </span>
+
+        <h3>
+          See the full portfolio collection.
+        </h3>
 
       </div>
 
 
       <a
-        class="scroll-hint"
-        href="#about"
-        aria-label="Scroll to about"
+        class="button button-dark"
+        href="#"
+        target="_blank"
+        rel="noopener"
       >
-        <span></span>
-        Scroll
+        View all portfolios ↗
       </a>
-
-    </section>
-
-
-    <!-- ABOUT -->
-    <section id="about" class="section about">
-
-      <div class="container">
-
-        <div class="section-heading reveal">
-          <div class="eyebrow">About</div>
-
-          <h2>
-            Let me introduce <em>myself.</em>
-          </h2>
-
-          <p>
-            Commerce, technology and a decade of real-world experience —
-            brought together in one profile.
-          </p>
-        </div>
-
-
-        <div class="about-grid">
-
-          <div class="profile-card reveal">
-
-            <div
-              class="profile-avatar"
-              aria-label="Faramarz Rezaee profile placeholder"
-            >
-              <span>FR</span>
-            </div>
-
-            <div class="profile-card-body">
-
-              <span class="tag">
-                Software Engineer
-              </span>
-
-              <h3>
-                Faramarz Rezaee
-              </h3>
-
-              <p>
-                Faraz Rze
-              </p>
-
-              <a
-                href="https://farazwebmaster.ir/"
-                target="_blank"
-                rel="noopener"
-              >
-                farazwebmaster.ir ↗
-              </a>
-
-            </div>
-
-          </div>
-
-
-          <div class="about-copy reveal">
-
-            <p class="lead">
-              My name is Faramarz Rezaee, and I am a professional with a
-              diverse background in commerce and technology. With over 5 years
-              of work experience, I have developed a strong skill set that
-              combines business expertise with programming and web development.
-            </p>
-
-            <p>
-              I am a professional WordPress developer with strong experience
-              in designing and developing modern websites. I also specialize
-              in Python and Django, with hands-on experience in building web
-              applications and backend solutions.
-            </p>
-
-            <p>
-              Alongside development, I have practical knowledge of HTML and
-              CSS and a strong professional interest in Artificial Intelligence,
-              AI-assisted development, automation, and advanced prompt
-              engineering. I focus on combining software development with AI
-              tools to create efficient, modern, and practical digital solutions.
-            </p>
-
-
-            <div class="facts">
-
-              <div>
-                <small>Full name</small>
-                <strong>Faramarz Rezaee</strong>
-              </div>
-
-              <div>
-                <small>Nickname</small>
-                <strong>Faraz_Rze</strong>
-              </div>
-
-              <div>
-                <small>Birth date</small>
-                <strong>February 17, 1995</strong>
-              </div>
-
-              <div>
-                <small>Role</small>
-                <strong>Freelancer / Developer</strong>
-              </div>
-
-              <div>
-                <small>Email</small>
-                <a href="mailto:farazrze18@gmail.com">
-                  <strong>farazrze18@gmail.com</strong>
-                </a>
-              </div>
-
-              <div>
-                <small>Website</small>
-                <a
-                  href="https://farazwebmaster.ir"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <strong>farazwebmaster.ir</strong>
-                </a>
-              </div>
-
-              <div>
-                <small>GitHub</small>
-                <a
-                  href="https://github.com/farazrze"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <strong>FarazRze</strong>
-                </a>
-              </div>
-
-              <div>
-                <small>LinkedIn</small>
-                <a
-                  href="https://www.linkedin.com/in/faraz-rze/"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <strong>Faraz-Rze</strong>
-                </a>
-              </div>
-
-            </div>
-
-          </div>
-
-        </div>
-
-
-        <!-- SKILLS -->
-        <div class="skills-area reveal">
-
-          <div class="skills-title">
-
-            <div>
-              <span class="eyebrow">
-                Toolkit
-              </span>
-
-              <h3>
-                Technical skills
-              </h3>
-            </div>
-
-            <p>
-              Selected technical skills and technologies.
-            </p>
-
-          </div>
-
-
-          <div class="skill-grid">
-
-            <div class="skill">
-              <div>
-                <span>WordPress</span>
-                <b>100%</b>
-              </div>
-              <div class="skill-track">
-                <i style="--value:100%"></i>
-              </div>
-            </div>
-
-            <div class="skill">
-              <div>
-                <span>Python</span>
-                <b>85%</b>
-              </div>
-              <div class="skill-track">
-                <i style="--value:85%"></i>
-              </div>
-            </div>
-
-            <div class="skill">
-              <div>
-                <span>C++</span>
-                <b>30%</b>
-              </div>
-              <div class="skill-track">
-                <i style="--value:30%"></i>
-              </div>
-            </div>
-
-            <div class="skill">
-              <div>
-                <span>HTML</span>
-                <b>60%</b>
-              </div>
-              <div class="skill-track">
-                <i style="--value:60%"></i>
-              </div>
-            </div>
-
-            <div class="skill">
-              <div>
-                <span>CSS</span>
-                <b>60%</b>
-              </div>
-              <div class="skill-track">
-                <i style="--value:60%"></i>
-              </div>
-            </div>
-
-            <div class="skill">
-              <div>
-                <span>Django</span>
-                <b>80%</b>
-              </div>
-              <div class="skill-track">
-                <i style="--value:80%"></i>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- RESUME -->
-    <section id="resume" class="section section-soft">
-
-      <div class="container">
-
-        <div class="section-heading reveal">
-          <div class="eyebrow">Resume</div>
-
-          <h2>
-            More of my <em>credentials.</em>
-          </h2>
-
-          <p>
-            Education, training and professional experience.
-          </p>
-        </div>
-
-
-        <div class="timeline-layout">
-
-          <!-- EDUCATION -->
-          <div class="timeline-column reveal">
-
-            <h3 class="timeline-title">
-              Education & Training
-            </h3>
-
-            <article class="timeline-item">
-              <span class="timeline-dot"></span>
-              <time>2023 — Present</time>
-              <h4>Bachelor: Software Engineering</h4>
-              <h5>Tehran North University</h5>
-              <p>
-                Studying Computer Science with a major in Software Engineering,
-                with a future goal of studying Artificial Intelligence at
-                master's level.
-              </p>
-            </article>
-
-            <article class="timeline-item">
-              <span class="timeline-dot"></span>
-              <time>2013 — 2017</time>
-              <h4>
-                Bachelor: Natural Resources Engineering — Environmental
-              </h4>
-              <h5>Tehran North University</h5>
-              <p>
-                Four-year university program in natural resources engineering
-                and environmental studies.
-              </p>
-            </article>
-
-            <article class="timeline-item">
-              <span class="timeline-dot"></span>
-              <time>2023 — 2024</time>
-              <h4>Django</h4>
-              <h5>Maktabkhooneh</h5>
-              <p>
-                Focused training in the Django framework and web application
-                development.
-              </p>
-            </article>
-
-            <article class="timeline-item">
-              <span class="timeline-dot"></span>
-              <time>2023 — 2024</time>
-              <h4>WordPress</h4>
-              <h5>Maktabkhooneh</h5>
-              <p>
-                Learned WordPress to deliver polished websites efficiently
-                alongside software engineering work.
-              </p>
-            </article>
-
-            <article class="timeline-item">
-              <span class="timeline-dot"></span>
-              <time>2023</time>
-              <h4>Python Advanced MasterClass</h4>
-              <h5>Cando</h5>
-              <p>
-                Advanced Python concepts and practical development.
-              </p>
-            </article>
-
-            <article class="timeline-item">
-              <span class="timeline-dot"></span>
-              <time>2022 — 2023</time>
-              <h4>Python Foundation MasterClass</h4>
-              <h5>Cando</h5>
-              <p>
-                Python foundations and practical programming; progressed to
-                become the first student in the class.
-              </p>
-            </article>
-
-            <article class="timeline-item">
-              <span class="timeline-dot"></span>
-              <time>2022</time>
-              <h4>Programming Fundamentals</h4>
-              <h5>Cando</h5>
-              <p>
-                Started structured programming education and built the
-                foundation for later Python and web development work.
-              </p>
-            </article>
-
-          </div>
-
-
-          <!-- EXPERIENCE -->
-          <div class="timeline-column reveal">
-
-            <h3 class="timeline-title">
-              Work Experience
-            </h3>
-
-            <article class="timeline-item">
-              <span class="timeline-dot"></span>
-              <time>2020 — Present</time>
-              <h4>Software Engineer</h4>
-              <h5>Fanavaran Arvand</h5>
-              <p>
-                Transitioned into software engineering and also took
-                responsibility for the company's website design and development.
-              </p>
-            </article>
-
-            <article class="timeline-item">
-              <span class="timeline-dot"></span>
-              <time>2020 — Present</time>
-              <h4>Web Designer / WordPress Developer</h4>
-              <h5>Freelancer</h5>
-              <p>
-                Remote freelance website design and development alongside
-                software engineering.
-              </p>
-            </article>
-
-            <article class="timeline-item">
-              <span class="timeline-dot"></span>
-              <time>2018 — 2020</time>
-              <h4>Business Analyst</h4>
-              <h5>Fanavaran Arvand</h5>
-              <p>
-                Started at the company as a Sales Specialist and developed
-                experience in commercial operations and client-facing work.
-              </p>
-            </article>
-
-            <article class="timeline-item">
-              <span class="timeline-dot"></span>
-              <time>2015 — 2018</time>
-              <h4>Business Analyst</h4>
-              <h5>Palayesh Parafin Khavaran</h5>
-              <p>
-                Worked as an International Business Analyst in a company
-                involved in oil products, including import, export and production.
-              </p>
-            </article>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- PORTFOLIO -->
-    <section id="portfolio" class="section portfolio">
-
-      <div class="container">
-
-        <div class="section-heading reveal">
-
-          <div class="eyebrow">
-            Portfolio
-          </div>
-
-          <h2>
-            Check out some of my <em>works.</em>
-          </h2>
-
-          <p>
-            Selected projects and web development work.
-          </p>
-
-        </div>
-
-
-        <div class="portfolio-grid">
-
-          <a
-            class="project project-one reveal"
-            href="https://farazwebmaster.ir/"
-            target="_blank"
-            rel="noopener"
-          >
-
-            <div class="project-art">
-
-              <div class="project-placeholder">
-                Web Development
-              </div>
-
-              <b>
-                FarazWebMaster
-              </b>
-
-            </div>
-
-            <div class="project-info">
-
-              <span>
-                WordPress
-              </span>
-
-              <span>
-                Web Design
-              </span>
-
-              <h3>
-                Website Design & Development
-              </h3>
-
-              <i>
-                ↗
-              </i>
-
-            </div>
-
-          </a>
-
-
-          <a
-            class="project project-two reveal"
-            href="https://farazwebmaster.ir/"
-            target="_blank"
-            rel="noopener"
-          >
-
-            <div class="project-art">
-
-              <div class="project-placeholder">
-                WordPress
-              </div>
-
-              <b>
-                WordPress Projects
-              </b>
-
-            </div>
-
-            <div class="project-info">
-
-              <span>
-                WordPress
-              </span>
-
-              <h3>
-                WordPress Development
-              </h3>
-
-              <i>
-                ↗
-              </i>
-
-            </div>
-
-          </a>
-
-
-          <a
-            class="project project-three reveal"
-            href="https://github.com/farazrze"
-            target="_blank"
-            rel="noopener"
-          >
-
-            <div class="project-art">
-
-              <div class="project-placeholder">
-                Python
-              </div>
-
-              <b>
-                Python Projects
-              </b>
-
-            </div>
-
-            <div class="project-info">
-
-              <span>
-                Python
-              </span>
-
-              <span>
-                Django
-              </span>
-
-              <h3>
-                Backend Development
-              </h3>
-
-              <i>
-                ↗
-              </i>
-
-            </div>
-
-          </a>
-
-
-          <a
-            class="project project-four reveal"
-            href="https://github.com/farazrze"
-            target="_blank"
-            rel="noopener"
-          >
-
-            <div class="project-art">
-
-              <div class="project-placeholder">
-                GitHub
-              </div>
-
-              <b>
-                Open Source Projects
-              </b>
-
-            </div>
-
-            <div class="project-info">
-
-              <span>
-                GitHub
-              </span>
-
-              <h3>
-                View My Projects
-              </h3>
-
-              <i>
-                ↗
-              </i>
-
-            </div>
-
-          </a>
-
-        </div>
-
-
-        <div class="portfolio-cta reveal">
-
-          <div>
-
-            <span class="eyebrow">
-              More projects
-            </span>
-
-            <h3>
-              See the full portfolio collection.
-            </h3>
-
-          </div>
-
-          <a
-            class="button button-dark"
-            href="https://farazwebmaster.ir/"
-            target="_blank"
-            rel="noopener"
-          >
-            View portfolio ↗
-          </a>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- SERVICES -->
-    <section id="services" class="section services section-dark">
-
-      <div class="services-bg" aria-hidden="true"></div>
-
-      <div class="container">
-
-        <div class="section-heading reveal">
-
-          <div class="eyebrow">
-            Services
-          </div>
-
-          <h2>
-            What can I do <em>for you?</em>
-          </h2>
-
-          <p>
-            Design, development and digital solutions built around practical
-            business needs.
-          </p>
-
-        </div>
-
-
-        <div class="services-grid">
-
-          <article class="service-card reveal">
-            <div class="service-icon">01</div>
-            <h3>Web Design</h3>
-            <p>
-              Visually appealing, responsive websites focused on clarity,
-              usability and a strong online presence.
-            </p>
-          </article>
-
-          <article class="service-card reveal">
-            <div class="service-icon">02</div>
-            <h3>Web Development</h3>
-            <p>
-              Front-end and back-end development using HTML, CSS, JavaScript,
-              Python and database-driven workflows.
-            </p>
-          </article>
-
-          <article class="service-card reveal">
-            <div class="service-icon">03</div>
-            <h3>Branding</h3>
-            <p>
-              Creating a consistent digital identity through visual language,
-              typography, colors and messaging.
-            </p>
-          </article>
-
-          <article class="service-card reveal">
-            <div class="service-icon">04</div>
-            <h3>UI/UX Design</h3>
-            <p>
-              Interfaces designed around usability, accessibility, visual
-              hierarchy and a better overall user experience.
-            </p>
-          </article>
-
-          <article class="service-card reveal">
-            <div class="service-icon">05</div>
-            <h3>Graphic Design</h3>
-            <p>
-              Digital visual content for websites, branding, marketing
-              materials and multimedia projects.
-            </p>
-          </article>
-
-          <article class="service-card reveal">
-            <div class="service-icon">06</div>
-            <h3>Consultancy</h3>
-            <p>
-              Practical technical and business guidance to analyze problems,
-              define solutions and improve execution.
-            </p>
-          </article>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- STATS -->
-    <section id="stats" class="stats section-dark">
-
-      <div class="container stats-grid">
-
-        <div class="stat reveal">
-          <strong data-count="100">0</strong>
-          <span>Projects Completed</span>
-        </div>
-
-        <div class="stat reveal">
-          <strong data-count="100">0</strong>
-          <span>Happy Clients</span>
-        </div>
-
-        <div class="stat reveal">
-          <strong data-count="30">0</strong>
-          <span>Technologies Used</span>
-        </div>
-
-        <div class="stat reveal">
-          <strong data-count="5">0</strong>
-          <span>Years of Experience</span>
-        </div>
-
-        <div class="stat reveal">
-          <strong data-count="70">0</strong>
-          <span>Websites Built</span>
-        </div>
-
-        <div class="stat reveal">
-          <strong data-count="7200">0</strong>
-          <span>Hours of Coding</span>
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- CONTACT -->
-    <section id="contact" class="section contact">
-
-      <div class="container">
-
-        <div class="contact-grid">
-
-          <div class="section-heading reveal">
-
-            <div class="eyebrow">
-              Contact
-            </div>
-
-            <h2>
-              I'd love to <em>hear from you.</em>
-            </h2>
-
-            <p>
-              Have a project, idea or collaboration in mind?
-              Send a message and let's talk.
-            </p>
-
-
-            <div class="contact-links">
-
-              <a href="mailto:farazrze18@gmail.com">
-                <small>Email</small>
-                <strong>farazrze18@gmail.com</strong>
-              </a>
-
-              <a
-                href="https://farazwebmaster.ir/"
-                target="_blank"
-                rel="noopener"
-              >
-                <small>Website</small>
-                <strong>farazwebmaster.ir</strong>
-              </a>
-
-              <a href="tel:+989128189597">
-                <small>Phone</small>
-                <strong>+98 912 818 9597</strong>
-              </a>
-
-            </div>
-
-          </div>
-
-
-          <div class="contact-form reveal">
-
-            <div class="contact-form-content">
-
-              <p>
-                Feel free to contact me directly through email,
-                WhatsApp or Telegram.
-              </p>
-
-              <a
-                class="button button-dark"
-                href="mailto:farazrze18@gmail.com"
-              >
-                Send me an email ↗
-              </a>
-
-              <a
-                class="button button-dark"
-                href="https://wa.me/989128189597"
-                target="_blank"
-                rel="noopener"
-              >
-                Contact on WhatsApp ↗
-              </a>
-
-              <a
-                class="button button-dark"
-                href="https://t.me/farazwebmaster"
-                target="_blank"
-                rel="noopener"
-              >
-                Message on Telegram ↗
-              </a>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-  </main>
-
-
-  <!-- FOOTER -->
-  <footer class="footer section-dark" id="footer">
-
-    <div class="container footer-inner">
-
-      <a class="logo" href="#top">
-        Faraz<span>.</span>
-      </a>
-
-      <p>
-        Designed & developed by
-        <a
-          href="https://farazwebmaster.ir/"
-          target="_blank"
-          rel="noopener"
-        >
-          FarazWebMaster
-        </a>
-      </p>
-
-      <div class="footer-socials">
-
-        <a
-          href="https://www.instagram.com/faraz_webmaster"
-          target="_blank"
-          rel="noopener"
-        >
-          Instagram
-        </a>
-
-        <a
-          href="https://t.me/farazwebmaster"
-          target="_blank"
-          rel="noopener"
-        >
-          Telegram
-        </a>
-
-      </div>
 
     </div>
 
+  </div>
+
+</section>
+```
+
+
+    <section id="services" class="section services section-dark">
+      <div class="services-bg" aria-hidden="true"></div>
+      <div class="container">
+        <div class="section-heading reveal"><div class="eyebrow">Services</div><h2>What can I do <em>for you?</em></h2><p>Design, development and digital solutions built around practical business needs.</p></div>
+        <div class="services-grid">
+          <article class="service-card reveal"><div class="service-icon">01</div><h3>Web Design</h3><p>Visually appealing, responsive websites focused on clarity, usability and a strong online presence.</p></article>
+          <article class="service-card reveal"><div class="service-icon">02</div><h3>Web Development</h3><p>Front-end and back-end development using HTML, CSS, JavaScript, Python and database-driven workflows.</p></article>
+          <article class="service-card reveal"><div class="service-icon">03</div><h3>Branding</h3><p>Creating a consistent digital identity through visual language, typography, colors and messaging.</p></article>
+          <article class="service-card reveal"><div class="service-icon">04</div><h3>UI/UX Design</h3><p>Interfaces designed around usability, accessibility, visual hierarchy and a better overall user experience.</p></article>
+          <article class="service-card reveal"><div class="service-icon">05</div><h3>Graphic Design</h3><p>Digital visual content for websites, branding, marketing materials and multimedia projects.</p></article>
+          <article class="service-card reveal"><div class="service-icon">06</div><h3>Consultancy</h3><p>Practical technical and business guidance to analyze problems, define solutions and improve execution.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="stats" class="stats section-dark">
+      <div class="container stats-grid">
+        <div class="stat reveal"><strong data-count="100">0</strong><span>Projects Completed</span></div>
+        <div class="stat reveal"><strong data-count="100">0</strong><span>Happy Clients</span></div>
+        <div class="stat reveal"> <strong data-count="30">0</strong><span>Technologies Used</span></div>
+        <div class="stat reveal"> <strong data-count="5">0</strong><span>Years of Experience</span></div>
+        <div class="stat reveal"> <strong data-count="70">0</strong><span>Websites Built</span></div>
+        <div class="stat reveal"> <strong data-count="7200">0</strong><span>Hours of Coding</span></div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="section-heading reveal"><div class="eyebrow">Contact</div><h2>I'd love to <em>hear from you.</em></h2><p>Have a project, idea or collaboration in mind? Send a message and let's talk.</p><div class="contact-links"><a href="mailto:farazrze18@gmail.com"><small>Email</small><strong>farazrze18@gmail.com</strong></a><a href="https://farazwebmaster.ir/" target="_blank" rel="noopener"><small>Website</small><strong>farazwebmaster.ir</strong></a><a href="tel:+989128189597"><small>Phone</small><strong>+98 912 818 9597</strong></a></div></div>
+          <form class="contact-form reveal" id="contactForm" action="{% url 'website:cv' %}" method="post">
+            {% csrf_token %}
+            <label><span>Your name</span><input name="name" required autocomplete="name" placeholder="John Doe"></label>
+            <label><span>Your email</span><input type="email" name="number" required autocomplete="email" placeholder="john@example.com"></label>
+            <label><span>Message</span><textarea name="project" rows="6" required placeholder="Tell me about your project..."></textarea></label>
+            <button class="button button-dark" type="submit">Send message ↗</button>
+            <p class="form-note" id="formNote" role="status"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer section-dark" id="footer">
+    <div class="container footer-inner"><a class="logo" href="#top">Faraz<span>Webmaster</span></a><p>Designed & developed by <a href="https://farazwebmaster.ir/" target="_blank" rel="noopener">FarazWebMaster</a></p><div class="footer-socials"><a href="https://www.instagram.com/faraz_webmaster" target="_blank" rel="noopener">Instagram</a><a href="https://t.me/farazwebmaster" target="_blank" rel="noopener">Telegram</a></div></div>
   </footer>
-
-
-  <a
-    href="#top"
-    id="goTop"
-    class="go-top"
-    aria-label="Back to top"
-  >
-    ↑
-  </a>
-
-
-  <script
-    type="module"
-    src="cv.js"
-    defer
-  ></script>
-
+  <a href="#top" id="goTop" class="go-top" aria-label="Back to top">↑</a>
+  <script type="module" src="cv.js" defer></script>
 </body>
 </html>
